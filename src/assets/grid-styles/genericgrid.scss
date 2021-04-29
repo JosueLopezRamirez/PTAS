@@ -1,0 +1,36 @@
+.GenericGrid {
+  height: inherit;
+
+  .ag-cell {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    height: 33px;
+    line-height: 33px !important;
+    width: fit-content;
+  }
+
+  .classheader {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    height: 33px;
+    line-height: 33px !important;
+  }
+
+  .ag-header-cell {
+    padding: 0 !important;
+    height: 33px;
+  }
+
+  .ag-cell-auto-height {
+    height: 33px !important;
+  }
+
+  .ag-cell .number-chooser,
+  .ag-cell .date-chooser,
+  .ag-cell .combo-box,
+  .ag-cell .dropdown,
+  .ag-cell .textbox {
+    line-height: inherit !important;
+    height: 33px !important;
+  }
+}

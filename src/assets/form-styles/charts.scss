@@ -1,0 +1,30 @@
+.chart-frame {
+  max-width: 96vw;
+  margin:auto;
+}
+.bar-frame {
+  width: 96vw;
+  display: grid;
+  grid-column-gap: 1em;
+  > div {
+    border: 1px solid silver;
+    overflow: hidden;
+    background-color: white;
+  }
+  &.bf-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  &.bf-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  &.bf-1 {
+    grid-template-columns: 1fr;
+  }
+}
+// .plot-container {
+//   width: 120%;
+// }
+
+.js-plotly-plot {
+  width: 100%;
+}

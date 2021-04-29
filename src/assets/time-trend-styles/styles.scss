@@ -1,0 +1,209 @@
+.TimeTrend {
+
+  &-withBorder {
+    // border-top: 1.5px solid #333333;
+    border-bottom: 4px solid #333333;
+  }
+
+  &-grid {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-top: 4px solid #333333;
+    border-bottom: 4px solid #333333;
+    .ag-header-cell {
+      background-color: #d6d6d6;
+    }
+
+    &.withBorder {
+      border-left: 1px solid #000000;
+    }
+  }
+
+  &-label {
+    font-family: Cabin, Arial, Helvetica, sans-serif !important;
+    width: 6rem;
+    font-size: 18px !important;
+    text-align: right;
+    padding-top: 1em;
+    font-weight: bold !important;
+
+    &.sales {
+      width: 9.5rem;
+    }
+    // margin-right: 1em;
+  }
+
+  // &-icon {
+  //     margin-right: -0.5px;
+  //     background-color: #e6e6e6;
+  //     height: 37px !important;
+  //     width: 35px !important;
+  //     border: 1px solid #000000;
+  //     border-bottom-right-radius: 2.5px;
+  //     border-top-right-radius: 2.5px;
+  // }
+
+  &-report {
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: underline;
+    color: #000000;
+  }
+
+  &-maingrid {
+    .makeStyles-infobar-40 {
+      background-color: #ebebeb;
+    }
+    .ag-theme-alpine {
+      padding: 0;
+    }
+  }
+
+  &-labelForm {
+    margin-top: 15px;
+    padding-left: 35px;
+
+    label {
+      color: #000000;
+      font-size: 18px;
+    }
+  }
+
+  &-labelresult {
+    margin-left: 12px;
+  }
+
+  &-form {
+    margin-left: 0px;
+    section {
+      div {
+        .MuiInputBase-root {
+          width: 23ch;
+        }
+      }
+    }
+
+    &.dataset {
+      margin-left: 0;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      .TimeTrend-formGroup {
+        justify-content: flex-start;
+      }
+      .TimeTrend-label {
+        text-align: left;
+        padding-left: 50px;
+      }
+    }
+  }
+
+  &-results {
+    border-left: 1px solid #c0c0c0;
+    padding-left: 20px;
+    label {
+      margin-top: 15px;
+      color: #000000;
+    }
+  }
+  &-formWrapper {
+    border-top: 1px solid #000000;
+    padding-top: 15px;
+    margin-top: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  &-formGroup {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: flex-start;
+    margin-right: 23px;
+
+    &.sales {
+      justify-content: flex-start;
+      margin-bottom: 0px;
+      margin-top: 10px;
+      border-bottom: 1px solid #000000;
+      padding-bottom: 10px;
+      margin-right: 0px;
+    }
+
+    .drop-down {
+      // margin-left: 8px;
+      width: 265px;
+      height: 37px;
+      border: 1px solid #000000;
+      max-width: 35ch;
+      width: 100%;
+
+      .MuiSelect-icon {
+        top: -1px;
+        right: -1px;
+        margin-right: -0.5px;
+        background-color: #e6e6e6;
+        height: 37px !important;
+        width: 35px !important;
+        border: 1px solid #000000;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+    }
+
+    label {
+      margin-right: 26px;
+      color: #000000;
+    }
+  }
+
+  &-textField {
+    max-width: 40ch;
+    width: 100%;
+  }
+
+  &-dateField {
+    .MuiInputBase-root {
+      input {
+        &::-webkit-calendar-picker-indicator {
+          opacity: 0; //removes awful triangle indicator
+        }
+      }
+      &:after {
+        z-index: -1;
+        content: '';
+        display: block;
+        font-size: 2rem;
+        color: STEELBLUE;
+        background: none;
+        background: url('https://pngimage.net/wp-content/uploads/2018/05/drop-down-icon-png-7.png')
+          no-repeat;
+        background-size: 25px;
+        background-position: center;
+        width: 35px;
+        height: 37px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        border: 1px solid black;
+        background-color: #e6e6e6;
+      }
+    }
+  }
+}
+
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.Result {
+  &-calculated {
+    color: #a0a0a0;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: oblique;
+  }
+  &-strong {
+    font-weight: 600;
+  }
+}

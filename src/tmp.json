@@ -1,0 +1,40 @@
+{
+  "DatasetId": "bea379a7-6769-49a0-af87-48d81693b71b",
+  "ChartType": "Histogram",
+  "ChartTitle": "hhh",
+  "ChartExpressions": [
+    {
+      "ExpressionType": "TSQL",
+      "ExpressionRole": "IndependentVariable",
+      "Script": "Grade",
+      "ColumnName": "Grade",
+      "ExpressionGroup": "Grade_eg",
+      "ExpressionExtensions": {
+        "AutoBins": false,
+        "NumBins": 33,
+        "UseDiscreteBins": true
+      }
+    },
+    {
+      "ExpressionType": "TSQL",
+      "ExpressionRole": "GroupByVariable",
+      "Script": "Cond ASC",
+      "ColumnName": "Cond",
+      "ExpressionGroup": "Grade_eg"
+    },
+    {
+      "ExpressionType": "TSQL",
+      "ExpressionRole": "DependentVariable",
+      "Script": "Avg(TotLiv)",
+      "ColumnName": "Avg_of_TotLiv_calculated",
+      "ExpressionGroup": "TotLiv",
+      "ExpressionExtensions": {
+        "Style": "bar",
+        "LegendPosition": "Left"
+      }
+    }
+  ],
+  "chartExtensions": {
+    "generator": "custom"
+  }
+}

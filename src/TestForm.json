@@ -1,0 +1,64 @@
+{
+    "sections": [
+        {
+            "title": "Time trend regression",
+            "disabled": false,
+            "className":"",
+            "fields": [
+                {
+                    "title": "Time Trend",
+                    "type": "dropdown",
+                    "fieldName": "time_trend",
+                    "options": [
+                        {
+                            "value": "linear",
+                            "title": "Linear"
+                        },
+                        {
+                            "value": "secondorder",
+                            "title": "Second order polynomial"
+                        },
+                        {
+                            "value": "thirdorder",
+                            "title": "third order polynomial"
+                        }
+                    ],
+                    "validations": [
+                        {
+                            "type": "required",
+                            "message": "Please enter a value for time trend."
+                        }
+                    ]
+                },
+                {
+                    "title": "Name",
+                    "type": "textbox",
+                    "fieldName": "name",
+                    "placeholder": "Linear",
+                    "validations": [
+                        {
+                            "type": "required",
+                            "message": "Please enter a value for name."
+                        },
+                        {
+                            "type": "minlength",
+                            "params": {
+                                "value": 10
+                            }
+                        },
+                        {
+                            "type": "maxlength",
+                            "params": {
+                                "value": 20
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title":"Name"
+            
+        }
+    ]
+}

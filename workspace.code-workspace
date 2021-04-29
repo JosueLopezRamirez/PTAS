@@ -1,0 +1,11 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "..\\..\\..\\PTASCommon\\Source\\PTASNPMCommon\\@ptas\\react-ui-library"
+	}
+],
+  "settings": {}
+}

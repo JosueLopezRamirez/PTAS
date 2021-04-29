@@ -1,0 +1,12 @@
+.display-none {
+  display: none;
+}
+
+body {
+  .MuiPopover-root {
+    .MuiList-padding {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+  }
+}

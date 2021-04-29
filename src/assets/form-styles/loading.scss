@@ -1,0 +1,46 @@
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+.waiting {
+    &::before {
+        overflow: hidden;
+        color: black;
+        content: "";
+        display: block;
+        position: absolute;
+        box-sizing: border-box;
+        width: 60px;
+        height: 60px;
+        top: 30%;
+        left: 50%;
+        margin-left: -30px;
+        margin-right: -30px;
+        border-radius: 50%;
+        background-color: white;
+        border: 8px solid rgb(170, 216, 221);
+        border-right-color: rgb(134, 167, 172);
+        animation: spinner 2s linear infinite;
+        opacity: 0.75;
+    }
+    text-align: center;
+    padding: 2em 0;
+    font-weight: bolder;
+    font-size: 1.4em;
+    color: red;
+    z-index: 1200;
+}
+.temp-content {
+    max-width: 600px;
+    margin: 1em auto;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    * {
+        text-align: center;
+    }
+    h1 {
+        font-size: 1.5rem;
+        font-weight: normal;
+    }
+}
